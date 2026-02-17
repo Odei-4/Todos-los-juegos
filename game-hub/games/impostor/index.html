@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="eus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inpostorea by Odei</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3498db">
+</head>
+<script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+    }
+</script>
+
+<body>
+
+    <div class="container">
+        <h1>Inpostorea by Odei</h1>
+
+        <div id="config">
+
+            <select id="modoPalabra">
+                <option value="aleatoria">Hitz aleatorioa</option>
+                <option value="manual">Jarri nire hitz propioa</option>
+            </select>
+
+            <input type="text" id="palabraManual" placeholder="Idatzi zure hitza" class="oculto">
+
+            <input type="number" id="jokalari" placeholder="Jokalari zenbakia">
+            <input type="number" id="inpostoreak" placeholder="Inpostore zenbakia">
+
+            <button id="btnGenerar">Partida sortu</button>
+        </div>
+
+        <div id="juego" class="oculto">
+            <h2>Jokalari <span id="numeroJugador"></span></h2>
+            <button id="btnVerRol">Mantendu rol-a ikusteko</button>
+            <div id="rol"></div>
+            <button id="btnSiguiente">Hurrengo jokalria</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

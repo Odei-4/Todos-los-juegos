@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Profesional del Dado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ff9800">
+
+</head>
+
+<body>
+
+    <h1>🎲 Dadoaren Jokoa 🎲</h1>
+
+    <div class="config">
+        <label>Jokalariak (1-6):</label>
+        <select id="numJugadores">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+
+        <label>Errondak:</label>
+        <input type="number" id="numRondas" min="1" value="5">
+
+        <button onclick="crearJugadores()">Sortu Jokalariak</button>
+    </div>
+
+    <div id="jugadoresContainer"></div>
+
+    <div class="dado-container">
+        <div id="dado" class="dado">🎲</div>
+    </div>
+
+    <div class="botones">
+        <button onclick="tirarDado()">Bota Dadoa</button>
+        <button onclick="reiniciarRonda()">Berrabiarazi Erronda</button>
+        <button onclick="reiniciarJuego()">Berrabiarazi Jokoa</button>
+    </div>
+
+    <h2 id="infoRonda"></h2>
+    <div id="resultado"></div>
+    <div id="tablaPuntos"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

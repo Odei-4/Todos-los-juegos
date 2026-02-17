@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#000000">
+</head>
+
+<body>
+
+    <h1>🎮 Game Hub Offline</h1>
+
+    <div class="menu">
+        <a href="games/dado/index.html" class="card">🎲 Juego del Dado</a>
+        <a href="games/impostor/index.html" class="card">🕹 Juego 2</a>
+    </div>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js");
+        }
+    </script>
+
+</body>
+
+</html>
