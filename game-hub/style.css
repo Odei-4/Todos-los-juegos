@@ -1,6 +1,6 @@
 body {
-  background: #111;
-  color: white;
+  background-color: #2a5298;
+  color: black;
   text-align: center;
   font-family: Arial;
 }
@@ -12,21 +12,20 @@ body {
 }
 
 .card {
-  background: #222;
+  background-color: #ff9800;
   padding: 20px;
   margin: 15px;
   border-radius: 15px;
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 20px;
   transition: 0.3s;
 }
 
 .card:hover {
-  background: #ff9800;
+  background: #f503a4;
 }
 
-/* móvil */
 @media (max-width:600px) {
   .card {
     width: 80%;
