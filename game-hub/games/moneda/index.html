@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aurpegi edo Gurutze</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>🪙 Aurpegi edo Gurutze</h2>
+
+    <input type="text" id="p1" placeholder="1. Jokalariaren izena">
+    <select id="choice1">
+        <option value="cara">Aurpegi</option>
+        <option value="cruz">Gurutze</option>
+    </select>
+
+    <input type="text" id="p2" placeholder="2. Jokalariaren izena">
+    <select id="choice2">
+        <option value="cara">Aurpegi</option>
+        <option value="cruz">Gurutze</option>
+    </select>
+
+    <button id="lanzarBtn">Bota moneta</button>
+
+    <div class="coin-container">
+        <div class="coin" id="coin">
+            <div class="face cara">AURPEGI</div>
+            <div class="face cruz">GURUTZE</div>
+        </div>
+    </div>
+
+    <div class="result" id="resultado"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

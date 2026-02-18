@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Piedra Papel Tijera vs Máquina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>👌Harri Orri  Ar👌</h2>
+
+    <input type="text" id="playerName" placeholder="Zure izena">
+
+    <div class="choices">
+        <button class="choice" data-value="piedra">✊ Harria</button>
+        <button class="choice" data-value="papel">✋ Orria</button>
+        <button class="choice" data-value="tijera">✌️ Artazia</button>
+    </div>
+
+    <div class="arena">
+        <div class="mano" id="manoJugador">?</div>
+        <div class="vs">VS</div>
+        <div class="mano" id="manoMaquina">?</div>
+    </div>
+
+    <div class="result" id="resultado"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
